@@ -4,7 +4,7 @@ import no.hvl.dat100ptc.TODO;
 import no.hvl.dat100ptc.oppgave1.GPSPoint;
 
 public class GPSDataConverter {
-
+	//
 	// konverter tidsinformasjon i gps data punkt til antall sekunder fra midnatt
 	// dvs. ignorer information om dato og omregn tidspunkt til sekunder
 	// Eksempel - tidsinformasjon (som String): 2017-08-13T08:52:26.000Z
