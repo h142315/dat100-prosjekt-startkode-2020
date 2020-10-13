@@ -41,16 +41,31 @@ public class ShowProfile extends EasyGraphics {
 		showHeightProfile(MARGIN + MAXBARHEIGHT); 
 	}
 
+	
+	//5a) Vise høydeprofil
 	public void showHeightProfile(int ybase) {
 
 		// ybase indicates the position on the y-axis where the columns should start
 	
-		int x = MARGIN,y;
+		int x = MARGIN, y;
 
 		// TODO - START
 
-		throw new UnsupportedOperationException(TODO.method());
-	
+		//Går gjennom alle gpspunktene
+		for(int i = 0; i < gpspoints.length; i++) {
+			
+			//Henter inn gpspunktet sin elevation
+			y = (int) gpspoints[i].getElevation();
+			
+			//Viss den er større enn null..
+			if (y > 0) {
+				//Tegner en linje 
+				drawLine(x + i, ybase, x + i, y);
+			}
+			
+			
+		}
+
 		// TODO - SLUTT
 	}
 
